@@ -1,0 +1,658 @@
+* {
+	/*border: 1px solid red;*/
+}
+
+#wrapper {
+	width:960px;
+	margin: auto;
+	background: white;
+}
+
+.navcontainer {
+	width: 950px;
+	height: 100px;
+	background-image: url("Images/Navbar.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+	
+.logo { 
+	display: inline;
+	width: 200px;
+	height: 100px;
+}
+
+#logo1 {
+	width: 190px;
+	height: 100px;
+}
+
+.navigation {
+	height:50px;
+	float: right;
+	margin-top: 58px;
+	margin-right: 5px;
+}
+
+.navigation ul li {
+	font-family: Myriad Pro Regular;
+	color: #0ad5ff;
+	list-style-type: none;
+	display: inline;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.showcase {
+	width: 700px;
+	height: 145px;
+	margin-top: 10px;
+	float: left;
+}
+
+.showcase1 img {
+	max-width: 49%;
+	height: auto;
+	float: left;
+}
+
+.showcase2 img {
+	max-width: 49%;
+	height:auto;
+	float: right;
+}
+
+.extraimage {
+	width: 700px;
+	height: 145px;
+	margin-top: 10px;
+	float: left;
+}
+
+.extraimage .image {
+	width: 250px;
+	height: 145px;
+	float: left;
+}
+
+.extraimage .image img {
+	width: 100%;
+	height: 145px;
+}
+
+.extraimage .text {
+	width: 450px;
+	height: 145px;
+	background-color: #000000;
+	float: left;
+}
+
+.extraimage .text p {
+	color: #0ad5ff;
+	font-family: Microsoft Sans Serif Regular;
+	font-size: 35px;
+	margin: 11px 10px 15px 5px;
+}
+
+.bodyinfo {
+	width: 700px;
+	height: 490px;	
+	margin-top: 5px;
+	float: left;
+}
+
+.Divider{
+	max-width: 100%;
+	height: auto;
+}
+
+.htext {
+	font-family:Myriad Pro Regular;
+	color: #0ad5ff;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.text {
+	font-family: Microsoft Sans Serif Regular;
+	color: #000000;
+}
+
+.sideshowcase {
+	width: 240px;
+	height: 565px;
+	margin-top: 18px;
+	margin-left: 708px;
+}
+
+.sideshowcase form h2 {
+	font-family: Myriad Pro Regular;
+	color: #0ad5ff;
+	text-align: center;
+}
+
+.sideshowcase form p {
+	margin-top: 1px;
+	margin-bottom: 1px;
+	margin-left: 20px;
+	margin-right: 10px;
+}
+
+.sideshowcase input {
+	border: 1px solid #000000;
+	border-radius: 4px;
+	margin: 8px;
+	padding: 8px;
+	width: 200px;
+}
+
+.sideshowcase select {
+	border: 1px solid #000000;
+	border-radius: 4px;
+	margin: 8px;
+	padding: 8px;
+	width: 220px;
+}
+
+.sideshowcase form button {
+	border: 1px solid black;
+	border-radius: 4px;
+    width: 220px;
+    height:33px;
+	font-weight: bold;
+	font-size: 25px;
+	color: #0ad5ff;
+	background-color: #000000;
+	display: block;
+	margin: auto;
+}
+
+.socialmedia {
+	width: 240px;
+	height: 230px;
+	margin-top: 2px;
+	margin-left: 708px;
+}
+
+.socialmedialink {
+	max-width: 100%;
+	height: auto;
+	margin-top: 16px;
+	margin-bottom: 4px;
+}
+
+.footer {
+	width: 958px;
+	height: 195px;
+	margin-top: 40px;
+	background-image: url("Images/Footer Design.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.ourcompany {
+	width: 150px;
+	height: 160px;
+	float: left;
+}
+
+.activities {
+	width: 100px;
+	height: 130px;
+	float: left;
+	margin-left: 60px;
+}
+
+.bowling {
+	width: 130px;
+	height: 120px;
+	float: left;
+	margin-left: 60px;
+}
+
+.bookandcall {
+	width: 395px;
+	height: 160px;
+	float: left;
+	margin-left: 60px;
+}
+
+.footer ul li {
+	font-family: Microsoft Sans Serif Regular;
+	color: #000000;
+	list-style-type: none;
+	margin-left: -39px;
+}
+
+.footer ul li a:link {
+	color: #000000; 
+	background-color: transparent; 
+	text-decoration: none;
+}
+
+.footer ul li a:visited {
+	color: #000000; 
+	background-color: transparent; 
+	text-decoration: none;
+}
+
+.footer ul li a:hover {
+	color: #000000; 
+	background-color: transparent; 
+	text-decoration: none;
+}
+
+.footer ul li a:active {
+	color: #000000; 
+	background-color: transparent; 
+	text-decoration: none;
+}
+
+.sidelinkscontainer {
+	width: 150px;
+	height: 800px;
+	margin-top: 18px;
+	float: left;
+}
+
+.sidelinkscontainer h2 {
+	font-family: Microsoft Sans Serif Regular;
+	color: #000000;
+}
+
+.sidelinkscontainer p {
+	font-family: Myriad Pro Regular;
+	color: #0ad5ff;
+}
+
+.sidelinkscontainer span.bottomborder {
+	border-bottom: 2px solid #000000;
+	padding-right: 20px;
+}
+
+.sidelinkscontainer span.bottomborder2 {
+	border-bottom: 2px solid #000000;
+}
+
+.sidelinkscontainer span.arrow {
+	color: #000000;
+}
+
+.bodyinfo2 {
+	width: 530px;
+	height: 800px;
+	margin-top: 10px;
+	margin-left: 15px;
+	float: left;
+}
+
+.bodyinfo2 .bottomborder {
+	border-bottom: 2px solid #000000;
+	padding-right: 407px;
+}
+
+.bodyinfo2 h3 {
+	font-family: Microsoft Sans Serif Regular;
+	color: #000000;
+}
+
+.bodyinfo2 ul li {
+	list-style-type: none;
+	margin-left: -40px;
+	font-family: Microsoft Sans Serif Regular;
+	color: #000000;
+}
+
+.bodyinfo2 p {
+	font-family: Microsoft Sans Serif Regular;
+	color: #000000;
+}
+
+.bodyinfo2 .bottomborder2 {
+	border-bottom: 2px solid #000000;
+	padding-right: 225px;
+}
+
+.bodyinfo2 .bottomborder3 {
+	border-bottom: 2px solid #000000;
+	padding-right: 235px;
+}
+
+.bodyinfo2 .bottomborder4 {
+	border-bottom: 2px solid #000000;
+	padding-right: 300px;
+}
+
+.bodyinfo2 .bottomborder5 {
+	border-bottom: 2px solid #000000;
+	padding-right: 300px;
+}
+
+.bodyinfo2 form label {
+	width: 110px;
+	text-align: left;
+	display:inline-block;
+	font-family: Microsoft Sans Serif Regular;
+	color: #000000;
+}
+
+.bodyinfo2 .contactusform input {
+	border: 1px solid #000000;
+	border-radius: 4px;
+	margin: 10px;
+	padding: 5px;
+	width: 200px;
+}
+
+.bodyinfo2 .contactusformcomments input {
+	border: 1px solid #000000;
+	border-radius: 4px;
+	margin: 10px;
+	padding: 5px 5px 120px 5px;
+	width: 350px;
+}
+
+.bodyinfo2 form button {
+	border: 1px solid black;
+	border-radius: 4px;
+    width: 190px;
+    height:40px;
+	font-weight: bold;
+	font-size: 20px;
+	color: #0ad5ff;
+	background-color: #000000;
+	display: block;
+	margin-left: 124px;
+}
+
+.bodyinfo2 .purplebowlingimage {
+	width: 100%;
+	height: auto;
+}
+
+.bodyinfo2 .colourful {
+	font-family:Myriad Pro Regular;
+	color: #0ad5ff;
+}
+
+.bodyinfo2 button {
+	border: 1px solid black;
+	border-radius: 4px;
+    width: 260px;
+    height:40px;
+	font-weight: bold;
+	font-size: 22px;
+	color: #0ad5ff;
+	background-color: #000000;
+	display: block;
+	margin-top: 40px;
+}
+
+.activitiesimagetext {
+	width: 530px;
+	height: 176px;
+}
+
+.activitiesimage {
+	width: 262px;
+	height: 176px;
+	float: left;
+}
+
+.activitiesimage img {
+	width: 100%;
+	height: 176px;
+}
+
+.activitiestext {
+	width: 262px;
+	height: 176px;
+	background-color: #000000;
+	float: left;
+}
+
+.activitiestext p {
+	color: #0ad5ff;
+	font-family: Microsoft Sans Serif Regular;
+	font-size: 25px;
+	margin: 15px 10px 15px 5px;
+}
+
+.bodyinfo2 .underline {
+	text-decoration: underline;
+}
+
+.row {
+	width: 700px;
+	height: 260px;
+	margin-top: 10px;
+	float: left;
+}
+
+.section1 {
+	width: 49%;
+	height: 252px;
+	float: left;
+}
+
+.section1 img {
+	width: 100%;
+	height: 70%;
+}
+
+.section1 h3 {
+	font-family: Myriad Pro Regular;
+	color: #0ad5ff;
+	margin-top: -1px;
+}
+
+.section1 p {
+	margin-top: -15px;
+}
+
+.section2 {
+	width: 49%;
+	height: 252px;
+	float: right;
+}
+
+.section2 img {
+	width: 100%;
+	height: 70%;
+}
+
+.section2 h3 {
+	font-family: Myriad Pro Regular;
+	color: #0ad5ff;
+	margin-top: -1px;
+}
+
+.section2 p {
+	margin-top: -15px;
+}
+
+.bookingform h1 {
+	font-family: Myriad Pro Regular;
+	color: #0ad5ff;
+}
+
+.bookingform fieldset {
+	border: 1px solid #000000;
+	border-radius: 4px;
+	width: 600px;
+	height: 400px;
+}
+
+.bookingform label {
+	border: 1px transparent #000000;
+	width: 180px;
+	text-align: left;
+	display: inline-block;
+	margin: 10px 10px 10px 20px;
+	padding: 8px;
+	border-radius: 4px;
+	background-color: #ffffff;
+}
+
+.bookingform p {
+	margin: 10px 10px 10px 20px;
+	padding: 8px;
+	font-family: Microsoft Sans Serif Regular;
+	color: #999999;
+	display: inline-block;
+}
+
+.bookingform #location {
+	border: 1px transparent #000000;
+	border-radius: 4px;
+	margin: 8px 20px 8px 0px;
+	padding: 8px;
+	width: 220px;
+	display: inline-block;
+}
+
+.bookingform #adults {
+	border: 1px transparent #000000;
+	width: 80px;
+	text-align: left;
+	display: inline-block;
+	margin: 10px 80px 10px 0px;
+	padding: 8px;
+	border-radius: 4px;
+	background-color: #ffffff;
+}
+
+.bookingform #juniors {
+	border: 1px transparent #000000;
+	width: 80px;
+	text-align: left;
+	display: inline-block;
+	margin: 10px 60px 10px 0px;
+	padding: 8px;
+	border-radius: 4px;
+	background-color: #ffffff;
+}
+
+.bookingform #date {
+	border: 1px transparent #000000;
+	width: 120px;
+	text-align: left;
+	display: inline-block;
+	margin: 10px 30px 10px 0px;
+	padding: 8px;
+	border-radius: 4px;
+	background-color: #ffffff;
+}
+
+.bookingform #time {
+	border: 1px transparent #000000;
+	width: 110px;
+	text-align: left;
+	display: inline-block;
+	margin: 10px 30px 10px 0px;
+	padding: 8px;
+	border-radius: 4px;
+	background-color: #ffffff;
+}
+
+.bookingform #games {
+	border: 1px transparent #000000;
+	width: 80px;
+	text-align: left;
+	display: inline-block;
+	margin: 10px 0px 10px 0px;
+	padding: 8px;
+	border-radius: 4px;
+	background-color: #ffffff;
+}
+
+.bookingform button {
+	border: 1px solid black;
+	border-radius: 4px;
+    width: 320px;
+    height:40px;
+	font-weight: bold;
+	font-size: 20px;
+	color: #0ad5ff;
+	background-color: #000000;
+	display: block;
+	margin-left: 230px;
+	margin-top: 10px;
+}
+
+.bookingform form {
+	margin-bottom: 347px;
+}
+
+.foodimage {
+	width: 700px;
+	height: 235px;
+	margin-top: 10px;
+	float: left;
+}
+
+#food {
+	width: 350px;
+	height: 235px;
+	float: left;
+}
+
+#food2 {
+	width: 350px;
+	height: 235px;
+	float: right;
+}
+
+.menuinfo {
+	width: 700px;
+	height: 550px;
+	margin-top: 10px;
+	float: left;
+}
+
+.menuinfo h2 {
+	font-family: Microsoft Sans Serif Regular;
+	color: #000000;
+	border-bottom: 2px solid #000000;
+	margin-top: 1px;
+	padding-right: 20px;
+}
+
+.menuinfo h3 {
+	font-family:Myriad Pro Regular;
+	color: #0ad5ff;
+}
+
+.menuinfo p {
+	font-family: Microsoft Sans Serif Regular;
+	color: #000000;
+}
+
+.menuinfo span.arrow {
+	color: #000000;
+}
+
+a:link {
+	color: #0ad5ff; 
+	background-color: transparent; 
+	text-decoration: none;
+}
+
+a:visited {
+	color:#0ad5ff; 
+	background-color: transparent; 
+	text-decoration: none;
+}
+
+a:hover   {
+	color: #0ad5ff; 
+	background-color: transparent; 
+	text-decoration: none;
+}
+
+a:active  {
+	color: #0ad5ff;
+	background-color: transparent; 
+	text-decoration: none;
+}
+

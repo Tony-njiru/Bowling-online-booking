@@ -1,0 +1,819 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+body {
+  /* when 3 circles flex-wrap's, 
+  we have to push down the body more */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main.info {
+  margin-top: 1rem; 
+  /* wrap two circles */
+}
+@media (min-width: 525px) {
+  /* wrap one circle */
+  main.info {
+    margin-top: -5rem;
+  }
+}
+@media (min-width: 815px) {
+  /* wrap no circles */
+  main.info {
+    margin-top: -4rem;
+  }
+}
+.spacer {
+  flex-grow: 1;
+}
+
+/* Temp commented following to isolate problem */
+
+.info {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 40% 60%;
+}
+
+.info h3 {
+  padding-bottom: 15px;
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.contact {
+    grid-column: 3 / 5;
+    background-color: #eb1c22;
+    background-image: linear-gradient(to right bottom, #be6e46, #fff, #be6e46);
+}
+
+.contact ul {
+  line-height: 1.5em;
+}
+
+.hours {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    background-color: #eb1c22;
+    background-image: linear-gradient(to right bottom, #be6e46, #fff, #be6e46);
+}
+.cosmic {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Temp commented following to isolate problem */
+
+@media  screen and (max-width: 768px) {
+  .info {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 30% 20%;
+}
+  .about {
+    grid-row: 1;
+    grid-column: 1 / 5;
+  }
+  .hours {
+    grid-row: 2;
+    grid-column: 1 / 5;
+  }
+  .contact {
+    grid-row: 3;
+    grid-column: 1 / 5;
+  }
+}
+
+.about {
+    grid-row: 1;
+    grid-column: 1 / 5;
+    background-color: #3e48cd;
+    background-image: linear-gradient(to right bottom, #9fc2cc, #fff, #9fc2cc);
+}
+
+.contact,
+.hours,
+.about {
+  text-align: center;
+  color: black;
+  font-size: 1.2em;
+  padding: 50px 45px;
+}
+
+.bowling {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  text-align: center;
+  color: black;
+  font-size: 1.0em;
+}
+
+.public-bowling {
+  width: 40%;
+  padding: 10px;
+  background-color: #98dfea;
+  background-image: linear-gradient(to right bottom, #98dfea, #ffffff, #98dfea);
+  border-radius: 75px 75px;
+  margin-bottom: 10px;
+  margin-left: 5%;
+}
+
+.public-bowling h2 {
+  padding: 10px 10px 0px 10px;
+}
+
+.public-bowling li {
+  line-height: 1.7em;
+
+}
+
+.league-hours {
+  width: 40%;
+  padding: 10px;
+  background-color: #98dfea;
+  background-image: linear-gradient(to right bottom, #9fc2cc, #ffffff, #9fc2cc);
+  border-radius: 75px 75px;
+  margin-bottom: 10px;
+  margin-right: 5%;
+  margin-left: auto;
+}
+
+.league-hours h2 {
+  padding: 10px 10px 0px 10px;
+}
+
+.league-hours h5 {
+  padding-bottom: 10px;
+}
+
+.public-bowling h5 {
+  padding-bottom: 10px;
+}
+
+.youth {
+  background-color: #07beb8;
+  background-image: linear-gradient(to right bottom, #be6e46, #ffffff, #be6e46);
+  border-radius: 50px 50px 0px 0px;
+  width: 97%;
+  margin: auto;
+  padding: 10px;
+}
+.youth h2{
+  padding-top:10px;
+}
+.youth h4 {
+  text-align: left;
+  padding-left: 25px;
+  padding-bottom: 5px;
+}
+
+.youth p {
+  text-align: left;
+  padding-left: 25px;
+}
+
+.freeBowl {
+  width: 97%;
+  margin: auto;
+  padding: 15px;
+  background-color:#7b85c2;
+  background-image: linear-gradient(to right bottom, #b9bedf, #7b85c2, #b9bedf, #b9bedf, #7b85c2, #b9bedf);
+
+}
+.freeBowl ul {
+  padding: 5px 0px 5px 0px;
+}
+
+/* Flex management for Bowling page */
+@media  screen and (max-width: 768px) {
+  .bowling {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.public-bowling {
+  width: 100%;
+  margin: auto;
+  }
+.league-hours {
+  width: 100%;
+  margin: auto;
+  }  
+.youth {
+  width: 100%;
+  margin: auto;
+  }
+.freeBowl {
+  width: 100%;
+  margin: auto;
+  }
+}
+/* Flex management end */
+
+.parties {
+  text-align: center;
+  color: black;
+  font-weight: bolder;
+  font-size: 1.6em;
+  background-color: #7b85c2;
+  background-image: linear-gradient(to right bottom, #b9bedf, #7b85c2, #b9bedf, #b9bedf, #7b85c2, #b9bedf);
+  border-radius: 75px 75px;
+  margin: 0% 25% 0% 25%;
+
+}
+
+.parties h1 {
+  background-image: linear-gradient(to left, #eb1c22, #3e48cd);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 32px;
+    padding: 5px 20px 0px 20px;
+}
+
+.parties h2 {
+  font-size: 24px;
+}
+
+.pkg1 h2,
+.pkg2 h2 {
+  color: #3e48cd;
+}
+
+.pkg1 p,
+.pkg2 p {
+  color: #eb1c22;
+}
+
+.pkg2 h4 {
+  font-style: italic;
+}
+
+@media  screen and (max-width: 767px) {
+  .parties {
+    margin: 15px 15px 0px 15px;
+    padding: 10px;
+    font-size: 1em;
+  }
+  .parties h1 {
+    font-size: 28px;
+  }
+  .parties h2 {
+    font-size: 20px;
+  }
+} 
+
+.hero {
+  height: 100vh; 
+  /* The correct way to maintain footer at the bottom, always */
+  overflow: auto;
+  position: relative;
+}
+
+.background-image-main {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    url(images/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 75vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+.background-image-bowling {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    url(images/pic7.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+.background-image-packages {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    url(images/about.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+.background-image-dining {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+    url(images/patio1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.nav-bar {
+  display: flex;
+  padding: 20px;
+  /* background-color: hsla(0, 0%, 0%, 0.3); */
+}
+.nav-logo img {
+  width: 250px;
+  padding-left: 60px;
+  padding-top: 10px;
+}
+#sandy-logo {
+  width: 220px;
+  margin-top: -30px;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+.nav-links ul {
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 25px;
+  text-shadow: -1px 2px #37392e;
+}
+.nav-links ul a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+}
+@media  screen and (max-width: 767px) {
+  .nav-links ul a {
+    font-size: 18px;
+  }
+}
+.nav-links ul li::after {
+  content: " ";
+  width: 0;
+  height: 2px;
+  background: rgb(62, 72, 205);
+  display: block;
+  margin: auto;
+  transition: 0.3s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+.banner-title {
+  color: #fff;
+  padding: 10px;
+}
+.banner-title h1 {
+  font-size: 64px;
+  transform: skew(7deg, -6deg);
+  text-align: center;
+  padding-top: 50px;
+  text-shadow: -1px 3px #37392e;
+}
+.banner-title h3 {
+  font-size: 35px;
+  transform: skew(7deg, -6deg);
+  text-align: center;
+}
+.banner-title h1 span {
+  color: #ffd400;
+}
+.beach-title {
+  color: #fff;
+  padding: 75px 10px 10px 10px;
+}
+.beach-title h3 a, 
+.banner-title h3 a {
+  color: #3e48cd;
+  text-shadow: -1px 1px white;
+}
+
+.beach-title h1 {
+  font-size: 64px;
+  transform: skew(7deg, -6deg);
+  text-align: center;
+  font-family: "Great Vibes", cursive;
+  text-shadow: 1px 1px salmon;
+}
+.beach-title h3 {
+  font-size: 35px;
+  transform: skew(8deg, -5deg);
+  text-align: center;
+}
+.beach-title h1 span {
+  color: #fd17e4;
+  font-family: "Great Vibes", cursive;
+}
+.nav-bar .fa {
+  display: none;
+}
+.faq {
+  text-align: center;
+  font-size: 1.2em;
+  padding: 0% 10%;
+}
+
+.spotlight {
+  /*border: 2px solid purple;*/
+  position: absolute;
+  top: calc(75vh - 127px); /* minus half the height */
+  left: 0;
+  right: 0;
+  height: 254px;
+}
+.spotlight ul {
+  display: inline;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+
+  /* border: 2px dashed red; */
+}
+.spotlight h2 {
+  color: #ffd400;
+  text-shadow: -1px 2px #37392e;
+}
+/* add space between circles (when they don't wrap) */
+@media (min-width: 815px) {
+  .spotlight ul a:not(:first-child) li {
+    margin-left: 1em;
+  }
+}
+.spotlight ul li {
+  list-style: none;
+  display: inline-block;
+  border: 4px solid white;
+  border-radius: 50%;
+  height: 254px;
+  width: 254px;
+  justify-items: center;
+  text-align: center;
+  background-size: cover;
+}
+#league {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+    url(images/bowling.jpg);
+  /* background-position: center; */
+  /*  The above mentioned comment is also the way the control the gradient or to darken the image */
+}
+#dining {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+    url(images/dining2.jpg);
+  background-position: center;
+}
+#package {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+    url(images/about.jpg);
+  background-position: center;
+}
+#league:hover,
+#dining:hover,
+#package:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease-in;
+}
+.spotlight ul li h2 {
+  padding-top: 150px;
+}
+.spotlight ul a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 18px;
+}
+.spotlight ul li::after {
+  content: " ";
+  width: 0;
+  height: 2px;
+  background: rgb(62, 72, 205);
+  display: block;
+  margin: auto;
+  transition: 0.3s;
+}
+.spotlight ul li:hover::after {
+  width: 50%;
+}
+footer {
+  background-color: #3e48cd; /* Originally 62, 168, 255 */
+  /* height: 65px; */
+  text-align: center;
+  color: white;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+footer a {
+  color: #ffd400;
+  text-decoration: none;
+}
+footer p {
+  padding: 4px; 
+}
+p#subject {
+  background-color: rgb(46, 46, 46);
+  color: rgb(139, 160, 253);
+}
+
+@media screen and (max-width: 768px) {
+  .spotlight {
+    flex: 1;
+  }
+  .banner-title h1 {
+    font-size: 45px;
+  }
+  .banner-title h3 {
+    padding: 20px 10px 0px 0px;
+    font-size: 30px;
+  }
+  .banner-title h3 a {
+    font-size: 22px;
+  }
+  .beach-title h1 {
+    font-size: 45px;
+    padding: 0px 16px;
+  }
+  .beach-title h3{
+    padding: 0px 10px 0px 0px;
+  }
+  .beach-title h3 a {
+    font-size: 25px;
+  }
+  .nav-bar {
+    padding: 10px 30px;
+  }
+  .fa-bars {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    /* following to delete if no-go */
+    text-shadow: 2px 3px black;
+    background-color: #3e48cd;
+    display: block;
+    border-radius: 25%;
+    height: 26px;
+    width: 26px;
+    /* until here */
+  }
+  .nav-bar .fa {
+    display: block;
+    color: #fff;
+    margin: 20px 25px 0px 25px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-logo img {
+    width: 230px;
+  }
+  #sandy-logo {
+    width: 190px;
+  }
+  .nav-links {
+    height: 100vh;
+    width: 275px;
+    background: #000;
+    top: 0;
+    right: -275px;
+    position: absolute;
+    text-align: left;
+    z-index: 2;
+    transition: 0.5s;
+  }
+  .nav-links ul {
+    float: none;
+  }
+  .nav-links ul a {
+    display: block;
+    /* position: fixed; */
+  }
+  #league {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+      url(images/bowling.jpg);
+    /* background-position: center; */
+    /*  The above mentioned comment is also the way the control the gradient or to darken the image */
+  }
+  #dining {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+      url(images/dining2.jpg);
+    background-position: center;
+  }
+  #package {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+      url(images/pic6.jpg);
+    background-position: center;
+  }
+  .nav-links ul li::after,
+  .spotlight ul li::after {
+    content: " ";
+    width: 0;
+    height: 4px;
+    background: rgb(62, 72, 205);
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+  }
+  .nav-links ul li:hover::after {
+    width: 100%;
+  }
+  .spotlight ul li:hover::after {
+    width: 50%;
+  }
+}
+#pullout {
+  position: fixed;
+  top: 120px;
+  right: -230px;
+  width: 266px;
+  height: 280px;
+  background: none;
+  transition: all 0.5s ease;
+}
+
+#pullout.active {
+  right: 0;
+}
+
+#pullout-inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 230px;
+  height: 280px;
+}
+
+#pullout-form {
+  width: 230px;
+  height: 280px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(images/covid19.jpg) no-repeat;
+}
+
+#pullout-tab {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  color: white;
+  padding-left: 9px;
+  padding-top: 30px;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 200px;
+  background: #eb1c22;
+  cursor: pointer;
+  border-top-left-radius: 25%;
+  border-bottom-left-radius: 25%;
+}
+
+/* Covid-19 info page */
+.covid19 {
+  color: white;
+  padding: 20px;
+  width: 213px;
+  text-align: center;
+}
+.covid19 h4 ul li {
+  list-style-type: none;
+  color: rgb(207, 207, 207);
+  text-align: left;
+}
+.covid19 h4 ul li::before {
+  content: "\1F637";
+  margin-left: -15px;
+  margin-right: 10px;
+}
+.covid19 h4 ul {
+  margin-top: 20px;
+}
+.covid19 h2 {
+  text-decoration: underline;
+  text-shadow: 2px 2px salmon;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  #pullout-tab {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    color: white;
+    padding-left: 9px;
+    padding-top: 7px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 36px;
+    height: 170px;
+    background: #eb1c22;
+    cursor: pointer;
+    border-top-left-radius: 25%;
+    border-bottom-left-radius: 25%;
+  }
+}
+/* Covid-19 info page styling end */
+*
+{
+  padding: 0px;
+  margin: 0;
+  box-sizing: border-box;
+}
+.menu-bar
+{
+  background: rgb(0,100,0);
+  text-align: center;
+  
+}
+.menu-bar ul
+{
+  display: inline-flex;
+  list-style: none;
+  color: #fff;
+}
+.menu-bar ul li
+{
+  width: 120px;
+  margin: 15px
+  padding: 15px;
+}
+.menu-bar ul li a
+{
+  text-decoration: none;
+  color: #fff;
+}
+.active, .menu-bar ul li:hover
+{
+background: #2bab0d;
+border-radius: 3px;
+
+}
+
+.menu-bar .fa
+{
+  margin-right: 20px; 
+}
+.sub-menu-1
+{
+  display: none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+  display: block;
+  position: absolute;
+  background-color: rgb(0,100,0);
+  margin-top: 30px
+  margin-left:30px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+  display: block;
+  margin: 20px
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+  width: 150px
+  padding:70px;
+  border-bottom: 1px dotted #fff
+  background:transparent;
+  border-radius: 0;
+  text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+color: #b2ff00;
+}
+.sub-menu-2
+{
+  display: none;
+}
+.hover-me:hover .sub-menu-2
+{
+  position: absolute;
+  display: block;
+  margin: top -40px
+  margin-left 140px
+}
